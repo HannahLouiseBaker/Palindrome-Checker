@@ -1,0 +1,14 @@
+/* myStyle.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("racecar2.png");
+  background-color: #FEBD59;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: right;
+}

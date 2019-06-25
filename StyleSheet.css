@@ -5,10 +5,64 @@
   box-sizing: border-box;
 }
 
-body {
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Arbutus Slab";
+  color: #303030;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Arbutus Slab";
+  color: #303030;
+}
+
+p, li, label {
+  font-family: "Arimo";
+  color: #303030;
+}
+
+li, .racecar-text {
+  font-size: 14px;
+}
+
+.main-text {
+  font-size: 22px;
+  line-height: 35px;
+  padding: 20px 0 20px 0;
+}
+
+#button {
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  background-color: #FEBD59;
+  border-radius: 20px;
+  font-size: 22px;
+  color: #000000;
+  font-family: "Arimo";
+}
+
+#palindrome {
+  padding: 100px 0 100px 100px;
+  width: 600px;
+}
+
+#racecar {
+  width: 100%;
+  height: 100vh;
   background: url("racecar2.png");
   background-color: #FEBD59;
-  background-size: 40%;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+#description {
+  margin-top: 550px;
+  margin-left: 350px;
 }

@@ -3,6 +3,8 @@
   <head>
     <title>Palindrome Checker</title>
     <link href="StyleSheet.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" type="text/css" rel="stylesheet"/>
     <script type="text/JavaScript">
       let palindrome = () => {
         alert('True or false');
@@ -10,14 +12,28 @@
     </script>
   </head>
   <body>
-    <h1>Palindrome Checker</h1>
-    <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
-    <p>Use the Palindrome Checker below to test whether a word or a sentence is a palindrome!</p>
-    <form>
-      <label for="input-text">Enter a word or a sentence:</label>
-      <input type="text" id="input-text" required/>
-      <br/>
-      <input type="button" value="Check" onclick="palindrome()"/>
-    </form>
+    <main>
+    <section id="palindrome">
+      <h1>Palindrome Checker</h1>
+      <p class="main-text">A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing, e.g. race car and nurses run.</p>
+      <form>
+        <label for="input-text" class="main-text">Enter a word or a sentence to check whether it's a palindrome:</label>
+        <input type="text" id="input-text" required/>
+        <br/>
+        <input type="button" id="button" value="Check" onclick="palindrome()"/>
+      </form>
+    </section>
+    <section id="racecar">
+      <div id="description">
+        <h2>Race Car</h2>
+        <p class="racecar-text"> /ˈreɪs kɑːr/</p>
+        <p class="racecar-text">noun</p>
+        <ol>
+          <li>A car that has been specially designed for motor racing.</li>
+          <li>A palindrome.</li>
+        </ol>
+    </div>
+    </section>
+  </main>
   </body>
 </html>

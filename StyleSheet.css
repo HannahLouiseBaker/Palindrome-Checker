@@ -37,6 +37,11 @@ li, .racecar-text {
   padding: 20px 0 20px 0;
 }
 
+#input-text {
+  font-size: 22px;
+  line-height: 35px;
+}
+
 #button {
   margin: 20px 0 20px 0;
   padding: 10px;
@@ -48,8 +53,7 @@ li, .racecar-text {
 }
 
 #palindrome {
-  padding: 100px 0 100px 100px;
-  width: 600px;
+  padding: 100px 100px 100px 100px;
 }
 
 #racecar {
@@ -57,12 +61,79 @@ li, .racecar-text {
   height: 100vh;
   background: url("racecar2.png");
   background-color: #FEBD59;
-  background-size: 60%;
+  background-size: 500px;
   background-repeat: no-repeat;
   background-position: right;
 }
 
 #description {
-  margin-top: 550px;
-  margin-left: 350px;
+  margin-top: 500px;
+  width: 350px;
+  float: right;
+  margin-right: 10px;
+}
+
+@media (max-width: 1250px) {
+  #palindrome {
+    padding: 100px 10% 10% 10%;
+  }
+
+  .main-text {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0 20px 0;
+  }
+
+  #input-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  #button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #palindrome {
+    padding: 100px 10% 10% 10%;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px 0 20px 0;
+  }
+
+  #input-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  #button {
+    font-size: 16px;
+  }
+
+  #racecar {
+    background-size: 400px;
+  }
+
+  #description {
+    width: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    display: block;
+  }
+
+  #palindrome {
+    padding: 10% 10% 10% 10%;
+  }
 }

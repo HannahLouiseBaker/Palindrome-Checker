@@ -6,9 +6,16 @@
     <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Arimo" type="text/css" rel="stylesheet"/>
     <script type="text/JavaScript">
-      let palindrome = () => {
-        alert('True or false');
+    let palindrome = () => {
+      let str = document.getElementById("input-text").value;
+      let regex = /[^a-z0-9]/g;
+      let reverseStr = str.split('').reverse().join('').toLowerCase().replace(regex, '');
+      if (str.toLowerCase().replace(regex, '') === reverseStr) {
+        alert(str + " is a palindrome!");
+      } else {
+        alert(str + " is not a palindrome.");
       }
+    }
     </script>
   </head>
   <body>

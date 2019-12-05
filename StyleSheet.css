@@ -6,6 +6,7 @@
 }
 
 main {
+  height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -58,19 +59,11 @@ li, .racecar-text {
 
 #racecar {
   width: 100%;
-  height: 100vh;
-  background: url("racecar2.png");
+  height: 100%;
+  background: url("Race Car Background.jpg");
   background-color: #FEBD59;
   background-size: 500px;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-#description {
-  margin-top: 500px;
-  width: 350px;
-  float: right;
-  margin-right: 10px;
+  background-repeat: repeat;
 }
 
 @media (max-width: 1250px) {
